@@ -40,8 +40,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mbp/sails-webpack.git"
+    "url": "git://github.com/rustichearts/sails-webpack-scaffold.git"
   },
-  "author": "mbp",
-  "license": ""
+  "author": "kamiyam",
+  "license": "MIT"
 }
