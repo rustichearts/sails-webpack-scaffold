@@ -5,8 +5,8 @@ var webpack = require('webpack');
 var path = require('path');
 var LessPluginCleanCSS = require('less-plugin-clean-css');
 
-var debug = process.env.NODE_ENV === 'development';
-var entry = [
+var debug = process.env.NODE_ENV !== 'production';
+var entries = [
   path.resolve(__dirname, '../assets/main.js') // set your main javascript file
 ];
 var plugins = [
@@ -38,7 +38,7 @@ if (debug) {
 module.exports.webpack = {
   config: { // webpack config begin here
     devtool: ["eval", "#source-map"],
-    entry: entry,
+    entry: entries,
     output: {
       path: path.resolve(__dirname, '../.tmp/public'), // sails.js public path
       filename: 'bundle.js' // or 'bundle-[hash].js'
