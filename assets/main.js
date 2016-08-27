@@ -1,5 +1,5 @@
 require("./styles/importer.less");
-require("./js/sails.io.js");
+require("sails.io.js");
 
 import jQuery from "jquery";
 import moment from 'moment';

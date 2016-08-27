@@ -41,7 +41,8 @@ module.exports.webpack = {
     entry: entries,
     output: {
       path: path.resolve(__dirname, '../.tmp/public'), // sails.js public path
-      filename: 'bundle.js' // or 'bundle-[hash].js'
+      // filename: 'bundle.js' // or 'bundle-[hash].js'
+      filename: 'bundle-[hash].js'
     },
     debug: debug,
     plugins: plugins,
